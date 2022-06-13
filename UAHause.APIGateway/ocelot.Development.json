@@ -1,0 +1,301 @@
+{
+  "GloalConfiguration": {
+    "BaseUrl": "https://localhost:7086"
+  },
+  "Routes": [
+    // Advertisments
+    {
+      "DownstreamPathTemplate": "/api/Ad/GetById",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/GetById",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ad/Insert",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Insert",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ad/Update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Update",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Ad/Delete",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tag/Insert",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Tags/Insert",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tag/GetAll",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Tags/GetAll",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tag/Delete",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Tags/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Images/Delete",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7091"
+        }
+      ],
+      "UpstreamPathTemplate": "/Advertisments/Images/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // AdUserFeatures
+    // -> Comments
+    {
+      "DownstreamPathTemplate": "/api/Comment/GetByAdId",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/Comments/GetByAdId",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Comment/Upsert",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/Comments/Upsert",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Comment/Delete",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/Comments/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // -> Comparasion Ads
+    {
+      "DownstreamPathTemplate": "/api/ComparasionAd",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/ComparasionAd/Get",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ComparasionAd",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/ComparasionAd/Create",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ComparasionAd",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/ComparasionAd/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // -> Favorite Ads
+    {
+      "DownstreamPathTemplate": "/api/FavoriteAd",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/FavoriteAd/Get",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FavoriteAd",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/FavoriteAd/Create",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FavoriteAd",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/FavoriteAd/Delete",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // Users
+    {
+      "DownstreamPathTemplate": "/api/User/Register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/Register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/Update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/Update",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/Login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/Login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/GetById",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/GetById",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/GetByEmail",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/GetByEmail",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/GetByToken",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/GetByToken",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/GetAll",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7221"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/GetAll",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
