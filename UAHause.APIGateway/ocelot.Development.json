@@ -237,6 +237,30 @@
       "UpstreamPathTemplate": "/AdUserFeatures/FavoriteAd/Delete",
       "UpstreamHttpMethod": [ "DELETE" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/FavoriteAd/cache",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/FavoriteAd/Cache",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/FavoriteAd/cache",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/FavoriteAd/Cache",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
     // Users
     {
       "DownstreamPathTemplate": "/api/User/Register",
