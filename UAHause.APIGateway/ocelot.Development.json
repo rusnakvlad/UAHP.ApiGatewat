@@ -101,6 +101,31 @@
       "UpstreamHttpMethod": [ "DELETE" ]
     },
     // AdUserFeatures
+    // -> Advertisment
+    {
+      "DownstreamPathTemplate": "/api/Advertisments",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/Advertisments/GetAll",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Advertisments/userAdvertisments",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7291"
+        }
+      ],
+      "UpstreamPathTemplate": "/AdUserFeatures/Advertisments/userAdvertisments",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
     // -> Comments
     {
       "DownstreamPathTemplate": "/api/Comment/GetByAdId",
